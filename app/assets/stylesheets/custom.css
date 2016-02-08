@@ -1,0 +1,209 @@
+/*General CSS*/
+	body{
+		background-color: #eeeeee;
+		background-image: url("../images/wallpaper.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+	}
+
+
+
+	h1, h2, h3{
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	header{
+		margin-bottom: 10px;
+	}
+
+	footer{
+		text-align: center;
+		margin: 10px 11% 0px 11%;
+		padding-top: 15px;
+		background-color: #222;
+		color: #dbdbdb;
+		border-radius: 5px 5px 0px 0px;
+		overflow: hidden;
+	}
+
+	.underline{
+		background-color: #DE8C02;
+		height: 1px;
+		margin: 5px 0px 20px 0px;
+	}
+
+	.main-body{
+		margin: 0px 11% 0px 11%;
+		background-color: #222;
+		color: #dbdbdb;
+		padding: 50px;
+		border-radius: 6px;
+	}
+
+	.main-body h3{
+		text-align: center;
+	}
+
+	.main-body p{
+		font-family: "Open sans", sans-serif;
+		margin: 0px 10% 50px 10%5;
+		font-size: 16px
+	}
+
+	.centered{
+		text-align: center;
+	}
+
+
+
+/*Navbar CSS*/
+	#navbar{
+		text-align: center;
+	}
+
+	.navbar-collapse .navbar-nav{
+		width:80%;
+		min-width: 776px;
+		margin: 0px 0% 0px 10%;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.navbar-collapse .navbar-nav > li {
+		text-align: center;
+		width: 20%;
+		min-width: 155px;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: "Montserrat", sans-serif
+	}
+
+	.navbar-inverse .navbar-nav > li > a{
+		color: #dbdbdb;
+	}
+
+	.navbar-inverse .navbar-nav > li > a:hover{
+		color: #DE8C02;
+	}
+
+	.dropdown:hover .dropdown-menu {
+	    display: block;
+	    text-align: center;
+	}
+
+	.dropdown-menu {
+		    border:0px;
+		    width:100%;
+			text-align: center;
+			background-color: #222;
+			padding:0px;
+			border-radius: 0px;
+	}
+
+	.dropdown-menu > li >a{
+		padding: 20px 0px;
+		color: #dbdbdb;
+		font-size: 18px;
+	}
+
+	.dropdown-menu > li>a:hover{
+		background-color: #222;
+		color: #DE8C02;
+	}
+
+	.media_buttons{
+		display: inline-block;
+		position: absolute;
+		margin-left: auto;
+		margin-right: 50px;
+		top: 0px;
+		right:0px;
+	}
+
+	.media_buttons>a>img{
+		width:40px;
+		margin-top: 10px;
+
+	}
+
+
+	/*.media_buttons{
+		width:13%;
+		position: absolute;
+		z-index: 1001;
+		display: inline-block;
+		margin-left: 25px;
+	}
+	.media_buttons>a>img{
+		width: 40px;
+		z-index: 100;
+		display:inline-block;
+		margin-top: 5px;
+		margin-bottom: 5px
+	}
+
+
+
+
+/*Carousel CSS*/
+
+
+
+	#carousel_container > .item{
+		width: 80%;
+		height:100%;
+	}
+
+	#carousel_container > .item > img{
+		margin: auto;
+	}
+
+
+
+/*Thumbnail CSS*/
+	.home_thumbs{
+		width: 100%;
+	}
+
+	.thumbnail > img{
+		width: 50%;
+		margin-top: 20px;
+		border-radius: 5px;
+		border: 5px solid #222;
+	}
+
+
+/*Sponsorship*/
+	.docdownload{
+		font-size: 22px;
+		background-color: #555;
+		border-radius: 5px;
+		padding: 5px 10px;
+
+	}
+	.sponsorimage{
+		width:175px;
+		padding: 10px;
+	}
+	.sponsor-icon-container{
+		padding: 10px 0px;
+		background-color: #555;
+		border-radius: 10px;
+		border-width: 3px;
+		border-color: #000;
+	}
+
+
+
+/*Footer CSS*/
+	.footer-navbar > li{
+		display: inline-block;
+	}
+
+	.footer_text>span>a>img{
+		width: 40px;
+		margin:10px;
+	}

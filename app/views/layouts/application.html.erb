@@ -1,14 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--Designed by Hugo Kawamata-->
 <head>
-  <title>Uqbarsapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
+	<meta charset="utf-8">
+	<title>UQ BARS</title>
+
+	<!--Bootstrap css-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!--CSS-->
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true%>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+
+	<!--Javascript//jquery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
+
+
+
 <body>
 
+<header class="centered">
+
+	<a href="http://www.uqbars.com">
+		<img class="header_image centered" src="images/banner.png" alt="BARS logo"/>
+	</a>
+
+	<div class="media_buttons">
+		<a href="https://www.facebook.com/uqbars">
+			<img src="images/buttonfb.png" alt="Facebook">
+		</a>
+		<a href="https://www.instagram.com/uqbarsociety/">
+			<img src="images/buttoninsta.png" alt="Instagram">
+		</a>
+	</div>
+
+</header>
+
+<nav class="navbar navbar-inverse navbar-static-top navbar-default">
+	<div class="container-fluid">
+		<!--For mobile navigation-->
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+		    </button>
+	    </div>
+		<!--The actual navbar-->
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-left">
+
+				<li class="navbar_item">
+          			<%= link_to "Home", root_path %>
+          		</li>
+				<li class="navbar_item dropdown">
+          			<%= link_to "Events",
+              			events_path %>
+					<ul class="dropdown-menu">
+						<li>
+              				<%= link_to "Book", book_path %>
+			            </li>
+					</ul>
+				</li>
+
+				<li class="navbar-item dropdown">
+		          	<%= link_to "Sponsors",
+		              sponsors_path %>
+		            <ul class="dropdown-menu">
+		            	<li>
+		                	<%= link_to "Deals Card", card_path %>
+		            	</li>
+		            </ul>
+		        </li>
+
+				<li class="navbar_item">
+			        <%= link_to "About", about_path %>
+			    </li>
+
+				<li class="navbar_item navbar_join">
+		            <%= link_to "Join", join_path %>
+		        </li>
+
+			</ul>
+		</div>
+	</div>
+</nav>
+
 <%= yield %>
+
+<footer>
+	<ul class="footer-navbar">
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/events.html">Events</a>
+		</li>
+		<li>|</li>
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/book.html">Book</a>
+		</li>
+		<li>|</li>
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/card.html">Deals Card</a>
+		</li>
+		<li>|</li>
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/sponsors.html">Sponsors</a>
+		</li>
+		<li>|</li>
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/about.html">About Us</a>
+		</li>
+		<li>|</li>
+		<li class="footer-nav">
+			<a href="http://www.uqbars.com/join.html">Join the Club</a>
+		</li>
+	</ul>
+	<div class="footer_text">
+		<span>
+			<a href="https://www.facebook.com/uqbars">
+				<img src="images/buttonfb.png" alt="Facebook">
+			</a>
+		</span>
+		<span>Contact us at info@uqbars.com</span>
+		<span>
+			<a href="https://www.instagram.com/uqbarsociety/">
+				<img src="images/buttoninsta.png" alt="Instagram">
+			</a>
+		</span>
+		<p>© University of Queensland Beer and Rum Society</p>
+	</div>
+</footer>
+
+
+
 
 </body>
 </html>
