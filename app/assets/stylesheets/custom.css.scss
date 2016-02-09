@@ -1,7 +1,7 @@
 /*General CSS*/
 	body{
 		background-color: #eeeeee;
-		background-image: url('/assets/background.jpg');
+		background-image: image-url('wallpaper.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 	.underline{
 		background-color: #DE8C02;
 		height: 1px;
-		margin: 5px 0px 20px 0px;
+		margin: 5px 0px 40px 0px;
 	}
 
 	.main-body{
@@ -153,14 +153,19 @@
 
 
 	#carousel_container > .item{
-		width: 80%;
+		width: 100%;
 		height:100%;
 	}
 
 	#carousel_container > .item > img{
 		margin: auto;
+		width: 100%;
 	}
 
+	.carousel_image{
+		width: 100%;
+		margin: auto;
+	}
 
 
 /*Thumbnail CSS*/
@@ -194,8 +199,16 @@
 		border-radius: 10px;
 		border-width: 3px;
 		border-color: #000;
+		text-align: center;
 	}
 
+	.sponsor-section{
+		margin: 0px 10% 50px 10%;
+
+		p{
+			margin: 0px 0px 25px 0px;
+		}
+	}
 
 
 /*Footer CSS*/
