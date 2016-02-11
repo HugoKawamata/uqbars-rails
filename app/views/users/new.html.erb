@@ -1,0 +1,18 @@
+<div class="main-body">
+	<h2 class="centered">JOIN THE CLUB</h2>
+	<div class="underline"></div>
+	<div class="sign_up_form">
+		<%= form_for(@user) do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+
+			<%= f.label :email %>
+			<%= f.email_field :email %>
+
+			<%= f.label :sid, "Student ID (8 digits)" %>
+			<%= f.text_field :sid %>
+
+			<%= f.submit "Become a Member!", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
