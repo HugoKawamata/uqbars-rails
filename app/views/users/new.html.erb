@@ -3,14 +3,17 @@
 	<div class="underline"></div>
 	<div class="sign_up_form">
 		<%= form_for(@user) do |f| %>
+			<%= render "shared/error_messages" %>
 			<%= f.label :name %>
-			<%= f.text_field :name %>
+			<%= f.text_field :name, class: "form-control" %>
 
 			<%= f.label :email %>
-			<%= f.email_field :email %>
+			<%= f.email_field :email, class: "form-control" %>
 
-			<%= f.label :sid, "Student ID (8 digits)" %>
-			<%= f.text_field :sid %>
+			<%= f.label :sid, "Student ID (8 digits, no 's')" %>
+			<%= f.text_field :sid, class: "form-control" %>
+
+			<%= f.hidden_field :paid, value: false %>
 
 			<%= f.submit "Become a Member!", class: "btn btn-primary" %>
 		<% end %>

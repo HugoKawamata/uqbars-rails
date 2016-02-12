@@ -210,6 +210,27 @@
 		}
 	}
 
+/*Form CSS*/
+	.sign_up_form{
+
+		input{
+			margin: 10px 0px 40px 0px;
+		}
+
+		label{
+			font-size: 1.2em;
+		}
+
+		.btn{
+			background-color: #FF7F00;
+			border-color: #984c00;
+		}
+
+		.btn :hover{
+			background-color: #984C00;
+		}
+
+	}
 
 /*Footer CSS*/
 	.footer-navbar > li{

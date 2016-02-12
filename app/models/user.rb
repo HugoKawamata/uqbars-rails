@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 					  format: { with: emailregex },
                       uniqueness: { case_sensitive: false }
    
-    validates :sid, presence: true,
-    				length: { minimum: 8, maximum: 8 },
-    				uniqueness: true
+    validates :sid, presence: { message: "Student ID can't be blank" },
+    				length: { minimum: 8, maximum: 8, message: "Student ID must be 8 digits" },
+    				uniqueness: { message: "That student ID is already in use" }
 end

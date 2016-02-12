@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'sponsors' => 'static_pages#sponsors'
 
+  get 'success' => "users#success"
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
