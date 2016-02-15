@@ -4,14 +4,14 @@
 	<div class="sign_up_form">
 		<%= form_for(@user) do |f| %>
 			<%= render "shared/error_messages" %>
-			<%= f.label :name %>
-			<%= f.text_field :name, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px;" %>
+			<%= f.label :name, style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
+			<%= f.text_field :name, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
 
-			<%= f.label :email %>
-			<%= f.email_field :email, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px;" %>
+			<%= f.label :email, style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
+			<%= f.email_field :email, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
 
-			<%= f.label :sid, "Student ID (8 digits, no 's')" %>
-			<%= f.text_field :sid, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px;" %>
+			<%= f.label :sid, "Student ID (8 digits, no 's')", style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
+			<%= f.text_field :sid, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
 
 			<%= f.hidden_field :paid, value: false %>
 
