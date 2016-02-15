@@ -1,221 +1,248 @@
-/*General CSS*/
-	body{
-		background-color: #DE8C02;
+/* General CSS */
+
+	/* Variables and Mixins */
+		$main-gry: #222;
+		$orange: #DE8C02;
+		$text-white: #DBDBDB;
+
+
+	body {
+		background-color: $orange;
 		background-image: image-url('wallpaper.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-
 	}
 
 
 
-	h1, h2, h3{
+	h1, h2, h3 {
 		font-family: 'Montserrat', sans-serif;
 	}
 
-	header{
+	header {
 		margin-bottom: 10px;
 	}
 
-	footer{
+	footer {
 		text-align: center;
 		margin: 10px 11% 0px 11%;
 		padding-top: 15px;
-		background-color: #222;
-		color: #dbdbdb;
+		background-color: $main-gry;
+		color: $text-white;
 		border-radius: 5px 5px 0px 0px;
 		overflow: hidden;
 	}
 
-	.underline{
-		background-color: #DE8C02;
+	.underline {
+		background-color: $orange;
 		height: 1px;
 		margin: 5px 0px 40px 0px;
 	}
 
-	.main-body{
+	.main-body {
 		margin: 0px 11% 0px 11%;
-		background-color: #222;
-		color: #dbdbdb;
+		background-color: $main-gry;
+		color: $text-white;
 		padding: 50px;
 		border-radius: 6px;
-	}
 
-	.main-body h3{
-		text-align: center;
-	}
-
-	.main-body p{
-		font-family: "Open sans", sans-serif;
-		margin: 0px 10% 50px 10%;
-		font-size: 16px
-	}
-
-	.eventslist li{
-		font-size: 16px;
-		margin: 10px;
-	}
-
-	.centered{
-		text-align: center;
-	}
-
-
-
-/*Navbar CSS*/
-	#navbar{
-		text-align: center;
-	}
-
-	.navbar-collapse .navbar-nav{
-		width:80%;
-		min-width: 776px;
-		margin: 0px 0% 0px 10%;
-		text-align: center;
-		display: inline-block;
-	}
-
-	.navbar-collapse .navbar-nav > li {
-		text-align: center;
-		width: 20%;
-		min-width: 155px;
-		font-size: 18px;
-		text-transform: uppercase;
-		font-family: "Montserrat", sans-serif
-	}
-
-	.navbar-inverse .navbar-nav > li > a{
-		color: #dbdbdb;
-	}
-
-	.navbar-inverse .navbar-nav > li > a:hover{
-		color: #DE8C02;
-	}
-
-	.dropdown:hover .dropdown-menu {
-	    display: block;
-	    text-align: center;
-	}
-
-	.dropdown-menu {
-		    border:0px;
-		    width:100%;
+		h3 {
 			text-align: center;
-			background-color: #222;
-			padding:0px;
-			border-radius: 0px;
-	}
+		}
 
-	.dropdown-menu > li >a{
-		padding: 20px 0px;
-		color: #dbdbdb;
-		font-size: 18px;
-	}
-
-	.dropdown-menu > li>a:hover{
-		background-color: #222;
-		color: #DE8C02;
-	}
-
-	.media_buttons{
-		display: inline-block;
-		position: absolute;
-		margin-left: auto;
-		margin-right: 50px;
-		top: 0px;
-		right:0px;
-	}
-
-	.media_buttons>a>img{
-		width:40px;
-		margin-top: 10px;
-
+		p {
+			font-family: "Open sans", sans-serif;
+			margin: 0px 10% 50px 10%;
+			font-size: 1.3em
+		}
 	}
 
 
-	/*.media_buttons{
-		width:13%;
-		position: absolute;
-		z-index: 1001;
-		display: inline-block;
-		margin-left: 25px;
-	}
-	.media_buttons>a>img{
-		width: 40px;
-		z-index: 100;
-		display:inline-block;
-		margin-top: 5px;
-		margin-bottom: 5px
+	.centered {
+		text-align: center;
 	}
 
 
 
+/* Navbar */
 
-/*Carousel CSS*/
+	/* Navbar */
+
+		#navbar {
+			text-align: center;
+		}
+
+		.navbar-collapse .navbar-nav {
+			width:80%;
+			min-width: 776px;
+			margin: 0px 0% 0px 10%;
+			text-align: center;
+			display: inline-block;
+		}
+
+		.navbar-collapse .navbar-nav > li {
+			text-align: center;
+			width: 20%;
+			min-width: 155px;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			font-family: "Montserrat", sans-serif
+		}
+
+		.navbar-inverse .navbar-nav > li > a{
+			color: $text-white;
+		}
+
+		.navbar-inverse .navbar-nav > li > a:hover{
+			color: $orange;
+		}
+
+		.navbar-join {
+			background-color: $orange;
+		}
+
+
+	/* Dropdowns */
+
+		.dropdown:hover .dropdown-menu {
+		    display: block;
+		    text-align: center;
+		}
+
+		.dropdown-menu {
+			    border:0px;
+			    width:100%;
+				text-align: center;
+				background-color: $main-gry;
+				padding:0px;
+				border-radius: 0px;
+		}
+
+		.dropdown-menu > li > a {
+			padding: 20px 0px;
+			color: $text-white;
+			font-size: 1.4em;
+		}
+
+		.dropdown-menu > li > a:hover {
+			background-color: $main-gry;
+			color: $orange;
+		}
+
+	/* Media Buttons */	
+
+		.media_buttons {
+			display: inline-block;
+			position: absolute;
+			margin-left: auto;
+			margin-right: 50px;
+			top: 0px;
+			right:0px;
+		}
+
+		.media_buttons > a > img {
+			width:40px;
+			margin-top: 10px;
+
+		}
 
 
 
-	#carousel_container > .item{
-		width: 100%;
-		height:100%;
+
+/* Homepage */
+
+	/* Carousel CSS */
+
+		#carousel_container > .item {
+			width: 100%;
+			height:100%;
+		}
+
+		#carousel_container > .item > img {
+			margin: auto;
+			width: 100%;
+		}
+
+		.carousel_image {
+			width: 100%;
+			margin: auto;
+		}
+
+
+	/*Thumbnail CSS*/
+		.home_thumbs {
+			width: 100%;
+		}
+
+		.thumbnail {
+			background-color: $main-gry;
+			border: 0px;
+
+			h4 {
+				color: $text-white;
+			}
+
+			p {
+				color: $text-white;
+			}
+		}
+
+		.thumbnail > img {
+			width: 50%;
+			margin-top: 20px;
+			border-radius: 5px;
+			border: 5px solid #444;
+		}
+
+
+/* Events */
+	.eventslist {
+		width: 90%;
+		margin: 0 5% 0 5%;
+
+		li {
+			list-style-type: none;
+			margin: 20px 0;
+			font-size: 1.3em;
+		}
 	}
 
-	#carousel_container > .item > img{
-		margin: auto;
-		width: 100%;
-	}
 
-	.carousel_image{
-		width: 100%;
-		margin: auto;
-	}
-
-
-/*Thumbnail CSS*/
-	.home_thumbs{
-		width: 100%;
-	}
-
-	.thumbnail > img{
-		width: 50%;
-		margin-top: 20px;
-		border-radius: 5px;
-		border: 5px solid #222;
-	}
-
-
-/*Sponsorship*/
-	.docdownload{
-		font-size: 22px;
-		background-color: #555;
+/* Sponsorship */
+	.docdownload {
+		font-size: 1.7em;
+		background-color: $text-white;
 		border-radius: 5px;
 		padding: 5px 10px;
-
+		color: $main-gry;
+		margin: 0 10% 0 10%;
 	}
-	.sponsorimage{
+
+	.sponsorimage {
 		width:175px;
 		padding: 10px;
 	}
-	.sponsor-icon-container{
+
+	.sponsor-icon-container {
 		padding: 10px 0px;
-		background-color: #555;
+		background-color: $text-white;
 		border-radius: 10px;
 		border-width: 3px;
 		border-color: #000;
 		text-align: center;
 	}
 
-	.sponsor-section{
+	.sponsor-section {
 		margin: 0px 10% 50px 10%;
 
-		p{
+		p {
 			margin: 0px 0px 25px 0px;
 		}
 	}
 
-/*Form CSS*/
+/* Sign Up Form */
 	.sign_up_form{
 
 		input{
@@ -240,12 +267,12 @@
 
 	}
 
-/*Footer CSS*/
-	.footer-navbar > li{
+/* Footer */
+	.footer-navbar > li {
 		display: inline-block;
 	}
 
-	.footer_text>span>a>img{
+	.footer_text > span > a > img {
 		width: 40px;
 		margin:10px;
 	}

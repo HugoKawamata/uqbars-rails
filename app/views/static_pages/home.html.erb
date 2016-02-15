@@ -46,8 +46,8 @@
 				<div class="thumbnail">
 					<%= image_tag "iconexec.jpg", alt: "Executive icon" %>
 					<div class="caption">
-						<h4>BRAND NEW EXECUTIVE</h4>
-						<p>A brand new team of dedicated students has decided to reinvigorate the BARS! Expect great things!</p>
+						<h4 class="centered">BRAND NEW EXECUTIVE</h4>
+						<p class="centered">A brand new team of dedicated students has decided to reinvigorate the BARS! Expect great things!</p>
 					</div>
 				</div>
 			</div>
@@ -55,8 +55,8 @@
 				<div class="thumbnail">
 					<%= image_tag "iconevents.jpg", alt: "Events icon" %>
 					<div class="caption">
-						<h4>TONS OF MINI-EVENTS</h4>
-						<p>Enjoy Beer and Rum nights at UQ every week as well as some chill times at the Toowong bowls club.</p>
+						<h4 class="centered">TONS OF MINI-EVENTS</h4>
+						<p class="centered">Enjoy Beer and Rum nights at UQ every week as well as some chill times at the Toowong bowls club.</p>
 					</div>
 				</div>
 			</div>
@@ -64,8 +64,8 @@
 				<div class="thumbnail">
 					<%= image_tag "iconcard.jpg", alt: "Card icon" %>
 					<div class="caption">
-						<h4>SWEET DEALS CARD</h4>
-						<p>Our new team is working with lots of locations to bring an L-card like deals card to all BARS members!</p>
+						<h4 class="centered">SWEET DEALS CARD</h4>
+						<p class="centered">Our new team is working with lots of locations to bring an L-card like deals card to all BARS members!</p>
 					</div>
 				</div>
 			</div>
@@ -73,13 +73,15 @@
 	</div>
 
 
+	<!-- Contains some stuff I'm not sure about
+
 	<h3>EVENTS</h3>
 	<div class="underline"></div>
-	<p>Don’t miss out on the hottest events hosted by UQBARS! Check out our social calendar full of lively events and make sure to get around it. With big events such as a launch party and pub crawls, you will need to get in quick and book your tickets online before they run out!</p>
+	<p>Don’t miss out on the hottest events hosted by UQBARS! Check out our social calendar full of lively events and make sure to get around it. With big events such as a launch party and pub crawls, you will need to get in quick and book your tickets online before they run out!</p>-->
 
 
 	<h3>JOIN NOW!</h3>
 	<div class="underline"></div>
-	<p>Can’t wait to be a part of UQ BARS? Click on our link to purchase an instant membership and get access to a UQBARS card and all the perks that come with it! What are you waiting for?</p>
+	<p>Can’t wait to be a part of UQ BARS? Click <%= link_to "here", join_path %> to sign up and get access to a UQBARS card and all the perks that come with it! What are you waiting for?</p>
 
 </div>
