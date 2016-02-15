@@ -4,18 +4,50 @@
 	<div class="sign_up_form">
 		<%= form_for(@user) do |f| %>
 			<%= render "shared/error_messages" %>
-			<%= f.label :name, style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
-			<%= f.text_field :name, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
+			<%= f.label :name, style: "
+				width: 50%; 
+				margin-left: 25%; 
+				margin-right: 25%;" %>
+			<%= f.text_field :name, style: "
+				margin-left: 25%; 
+				border-radius: 2px; 
+				margin-top: 10px; 
+				margin-bottom: 40px; 
+				width: 50%; 
+				margin-right: 25%" %>
 
-			<%= f.label :email, style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
-			<%= f.email_field :email, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
+			<%= f.label :email, style: "
+				width: 50%; 
+				margin-left: 25%; 
+				margin-right: 25%;" %>
+			<%= f.email_field :email, style: "
+				margin-left: 25%; 
+				border-radius: 2px; 
+				margin-top: 10px; 
+				margin-bottom: 40px; 
+				width: 50%; 
+				margin-right: 25%" %>
 
-			<%= f.label :sid, "Student ID (8 digits, no 's')", style: "width: 50%; margin-left: 25%; margin-right: 25%;" %>
-			<%= f.text_field :sid, style: "margin-left: 25%; border-radius: 2px; margin-top: 10px; margin-bottom: 40px; width: 50%; margin-right: 25%" %>
+			<%= f.label :sid, "Student ID (8 digits, no 's')", style: "
+				width: 50%; 
+				margin-left: 25%; 
+				margin-right: 25%;" %>
+			<%= f.text_field :sid, style: "
+				margin-left: 25%; 
+				border-radius: 2px; 
+				margin-top: 10px; 
+				margin-bottom: 40px; 
+				width: 50%; 
+				margin-right: 25%" %>
 
 			<%= f.hidden_field :paid, value: false %>
 
-			<%= f.submit "Become a Member!", class: "btn btn-primary" %>
+			<%= f.submit "Become a Member!", class: "btn btn-primary", style: "
+				background-color: #FF7F00; 
+				border-color: #984c00;
+				width: 50%;
+				margin-left: 25%;
+				margin-right: 25%;" %>
 		<% end %>
 	</div>
 </div>
