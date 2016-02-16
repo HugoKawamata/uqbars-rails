@@ -15,10 +15,10 @@
 		<!--Ideal image size is 949x420, ensure imgs are same size-->
 		<div id="carousel_container" class="carousel-inner" role="listbox">
 			<div class="item image0 active">
-				<%= image_tag "carousel0.jpg", alt: "Carousel Image 1", class: "carousel_image" %>
+				<%= image_tag "carousel0.png", alt: "Carousel Image 1", class: "carousel_image" %>
 			</div>
 			<div class="item image1">
-				<%= image_tag "carousel1.jpg", alt: "Carousel Image 2", class: "carousel_image" %>
+				<%= image_tag "carousel1.png", alt: "Carousel Image 2", class: "carousel_image" %>
 			</div>
 			<div class="item image2">
 				<%= image_tag "carousel2.jpg", alt: "Carousel Image 3", class: "carousel_image" %>
@@ -44,7 +44,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<%= image_tag "iconexec.jpg", alt: "Executive icon" %>
+					<%= link_to image_tag("iconexec.jpg", alt: "Executive icon"), about_path %>
 					<div class="caption">
 						<h4 class="centered">BRAND NEW EXECUTIVE</h4>
 						<p class="centered">A brand new team of dedicated students has decided to reinvigorate the BARS! Expect great things!</p>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<%= image_tag "iconevents.jpg", alt: "Events icon" %>
+					<%= link_to image_tag("iconevents.jpg", alt: "Events icon"), events_path %>
 					<div class="caption">
 						<h4 class="centered">TONS OF MINI-EVENTS</h4>
 						<p class="centered">Enjoy Beer and Rum nights at UQ every week as well as some chill times at the Toowong bowls club.</p>
@@ -62,7 +62,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<%= image_tag "iconcard.jpg", alt: "Card icon" %>
+					<%= link_to image_tag("iconcard.jpg", alt: "Card icon"), card_path %>
 					<div class="caption">
 						<h4 class="centered">SWEET DEALS CARD</h4>
 						<p class="centered">Our new team is working with lots of locations to bring an L-card like deals card to all BARS members!</p>

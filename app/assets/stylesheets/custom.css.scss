@@ -190,7 +190,7 @@
 			}
 		}
 
-		.thumbnail > img {
+		.thumbnail img {
 			width: 50%;
 			margin-top: 20px;
 			border-radius: 5px;
@@ -240,6 +240,10 @@
 
 		p {
 			margin: 0px 0px 25px 0px;
+		}
+
+		li{
+			font-size: 1.3em;
 		}
 	}
 
