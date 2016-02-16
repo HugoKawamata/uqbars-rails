@@ -1,0 +1,332 @@
+/* General CSS */
+/* Variables and Mixins */
+/* line 10, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+body {
+  background-color: #DE8C02;
+  background-image: url(/assets/wallpaper-11e2414ccb3ec9ab2715670a2ad01f8b09f17b2f405c27d27e1d5f4f90675c57.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 21, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 25, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+header {
+  margin-bottom: 10px;
+}
+
+/* line 29, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+footer {
+  text-align: center;
+  margin: 10px 11% 0px 11%;
+  padding-top: 15px;
+  background-color: #222;
+  color: #DBDBDB;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+
+/* line 39, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.underline {
+  background-color: #DE8C02;
+  height: 1px;
+  margin: 5px 0px 40px 0px;
+}
+
+/* line 45, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.main-body {
+  margin: 0px 11% 0px 11%;
+  background-color: #222;
+  color: #DBDBDB;
+  padding: 50px;
+  border-radius: 6px;
+}
+/* line 52, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.main-body h3 {
+  text-align: center;
+}
+/* line 56, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.main-body p {
+  font-family: "Open sans", sans-serif;
+  margin: 0px 10% 50px 10%;
+  font-size: 1.3em;
+}
+
+/* line 64, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.centered {
+  text-align: center;
+}
+
+/* Navbar */
+/* Navbar */
+/* line 74, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+#navbar {
+  text-align: center;
+}
+
+/* line 78, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.navbar-collapse .navbar-nav {
+  width: 80%;
+  min-width: 776px;
+  margin: 0px 0% 0px 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 86, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.navbar-collapse .navbar-nav > li {
+  text-align: center;
+  width: 20%;
+  min-width: 155px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 95, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #DBDBDB;
+}
+
+/* line 99, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #DE8C02;
+}
+
+/* line 103, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.navbar-join {
+  background-color: #DE8C02;
+}
+
+/* Dropdowns */
+/* line 110, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  text-align: center;
+}
+
+/* line 115, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.dropdown-menu {
+  border: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+/* line 124, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.dropdown-menu > li > a {
+  padding: 20px 0px;
+  color: #DBDBDB;
+  font-size: 1.4em;
+}
+
+/* line 130, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.dropdown-menu > li > a:hover {
+  background-color: #222;
+  color: #DE8C02;
+}
+
+/* Media Buttons */
+/* line 137, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.media_buttons {
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 50px;
+  top: 0px;
+  right: 0px;
+}
+
+/* line 146, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.media_buttons > a > img {
+  width: 40px;
+  margin-top: 10px;
+}
+
+/* Homepage */
+/* Carousel CSS */
+/* line 159, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+#carousel_container > .item {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 164, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+#carousel_container > .item > img {
+  margin: auto;
+  width: 100%;
+}
+
+/* line 169, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.carousel_image {
+  width: 100%;
+  margin: auto;
+}
+
+/*Thumbnail CSS*/
+/* line 176, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.home_thumbs {
+  width: 100%;
+}
+
+/* line 180, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.thumbnail {
+  background-color: #222;
+  border: 0px;
+}
+/* line 185, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.thumbnail h4 {
+  color: #DBDBDB;
+}
+/* line 189, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.thumbnail p {
+  color: #DBDBDB;
+}
+
+/* line 194, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.thumbnail > img {
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 5px solid #444;
+}
+
+/* Events */
+/* line 203, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.eventslist {
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+/* line 207, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.eventslist li {
+  list-style-type: none;
+  margin: 20px 0;
+  font-size: 1.3em;
+}
+
+/* Sponsorship */
+/* line 216, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.docdownload {
+  font-size: 1.7em;
+  background-color: #DBDBDB;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #222;
+  margin: 0 10% 0 10%;
+}
+
+/* line 225, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sponsorimage {
+  width: 175px;
+  padding: 10px;
+}
+
+/* line 230, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sponsor-icon-container {
+  padding: 10px 0px;
+  background-color: #DBDBDB;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: #000;
+  text-align: center;
+}
+
+/* line 239, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sponsor-section {
+  margin: 0px 10% 50px 10%;
+}
+/* line 242, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sponsor-section p {
+  margin: 0px 0px 25px 0px;
+}
+
+/* Sign Up Form */
+/* line 250, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sign_up_form input {
+  margin: 10px 0px 40px 25%;
+  width: 50%;
+  border-radius: 3px;
+}
+/* line 256, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sign_up_form label {
+  font-size: 1.2em;
+  margin: 0 0 0 25%;
+}
+/* line 261, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sign_up_form .btn {
+  background-color: #FF7F00;
+  border-color: #984c00;
+}
+/* line 266, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.sign_up_form .btn :hover {
+  background-color: #984C00;
+}
+
+/* About Us */
+/* line 273, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 281, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.profile {
+  width: 30%;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 3px;
+  min-height: 208px;
+  margin: 5px;
+  font-size: 1.3em;
+}
+/* line 291, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.profile .name {
+  font-size: 1.5em;
+}
+/* line 295, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.profile .profile-pic {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+
+/* line 306, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.thrive {
+  color: #DE8C02;
+}
+
+/* Footer */
+/* line 312, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.footer-navbar > li {
+  display: inline-block;
+}
+
+/* line 316, /Users/hugokawamata/uqbars-rails/app/assets/stylesheets/custom.css.scss */
+.footer_text > span > a > img {
+  width: 40px;
+  margin: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
