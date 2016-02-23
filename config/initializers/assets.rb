@@ -48,10 +48,11 @@ Rails.application.config.assets.precompile += %w( sponsors/stonescorner.png )
 Rails.application.config.assets.precompile += %w( sponsors/thai.png )
 Rails.application.config.assets.precompile += %w( sponsors/toowongbowls.jpg )
 
+Rails.application.config.assets.precompile += %w( wallpaper.jpg )
+
 
 Rails.application.config.assets.precompile += %w( sponsors/carousel0.png )
 Rails.application.config.assets.precompile += %w( sponsors/carousel1.png )
 Rails.application.config.assets.precompile += %w( sponsors/carousel2.png )
 Rails.application.config.assets.precompile += %w( sponsors/carousel3.png )
 
-Rails.application.config.assets.precompile += %w( favicon.ico )
